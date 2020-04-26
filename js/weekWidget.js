@@ -18,6 +18,9 @@ export default class weekWidget {
     //and then only update part of week if year remains the same
     const self = this
     data.map(({ name, birthday }) => {
+      if (!name && !birthday) {
+        return
+      }
       const index = self.getDayIndex(birthday)
       if (self.weekCalendar[index].birthdays) {
         self.weekCalendar[index].birthdays.push({ name, birthday })
