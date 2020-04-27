@@ -39,6 +39,7 @@
   width: 100%;
   height: calc(100% - 50px);
   overflow: auto;
+  background-color:#fff;
 }
 
 .day-container.no-bd .bd-container {
